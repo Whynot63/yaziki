@@ -5,16 +5,32 @@
 
 Пример
 ======
+<pre>
 Реализованная схема метро:
 Царицыно              Марьино
 Орехово               Борисово
 Домодедовская         Шипиловская
 Красногвардейская <-> Зяблиоково
 Алма-Атинская
+</pre>
 
-язык ФРЛ
+ФРЛ
+```lisp
+(WAY 'DOMODEDOVSKAYA 'BORISOVO)
 ```
-(WAY 'ПРОЛЕТАРСКАЯ 'ТУРГЕНЕВСКАЯ)
+```
+(DOMODEDOVSKAYA KRASNOGVARDEYSKAYA ZYABLIKOVO SHIPILOVSKAYA BORISOVO)
+```
+---
+Пролог
+```prolog
+WAY("DOMODEDOVSKAYA" "BORISOVO", [])
+```
+```
+DOMODEDOVSKAYA
+KRASNOGVARDEYSKAYA
+ZYABLIKOVO
+SHIPILOVSKAYA
+BORISOVO
+```
 
-(ПРОЛЕТАРСКАЯ ТАГАНСКАЯ ПЛОЩАДЬ-НОГИНА ТУРГЕНЕВСКАЯ)
-```
