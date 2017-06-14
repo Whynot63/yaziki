@@ -4,6 +4,7 @@
 
 Примеры
 ======
+```lisp
+(@DELETE 'A '((A B C) (B C D A A) (C D) (A A)))
 ```
-(@DELETE 'A '((A B C) (B C D A A) (C D) (A A))) => ((B C) (B C D) (C D) NIL)
-```
+((B C) (B C D) (C D) NIL)
